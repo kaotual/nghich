@@ -1,7 +1,9 @@
-var h1 = document.getElementsByTagName('h1');
+function hello(name) {
+    let phrase = `hello, ${name}!`;
 
-var changetext = <h1>tieu de moi</h1>;
+    say(phrase);
+}
 
-console.log(h1);
-
-h1.innerHTML = changetext;
+function say(phrase) {
+    alert(`** ${phrase} **`);
+}
